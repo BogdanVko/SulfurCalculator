@@ -1,0 +1,339 @@
+﻿/***********************************************/
+/* emx_nav_left.css                            */
+/* Use with template Halo_leftNav.html         */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+	background: #f8efc5 url(../images/bg_grad.jpg) fixed;
+}
+
+/******* hyperlink and anchor tag styles *******/
+
+a:link    	        {
+	color: #006633;
+	text-decoration: none;
+	
+}
+
+a:visited 	        {
+	color: #666600;
+	
+}
+
+a:hover{
+	text-decoration: none;
+	
+}
+
+/************** header tag styles **************/
+
+h1{
+	font: bold 175% Arial,sans-serif;
+	color: #006666;
+	}
+
+h2     {font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: small; color: #006699; text-align: left}
+
+h3	{font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: medium; color: white; text-align: center}
+
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+#pagecell{
+	position: relative;
+	top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-color: white;
+	border-top: 1px solid #ccd2d2;
+	border-right: 1px solid #ccd2d2;
+	border-left: 1px solid #ccd2d2;
+	border-bottom: 1px solid #ccd2d2;
+	padding: 5px 20px;
+	
+}
+
+
+#pagecell h3{
+	font: bold Arial, sans-serif;
+	font-size: 105%;
+	color: #005fa9;
+	display:block;
+	background-color: #F8EFC5;
+	background-position: center;
+	text-align: center;
+	border-top: thin solid #336600;
+	border-right: thin solid #F8EFC5;
+	border-bottom: thin solid #F8EFC5;
+	border-left: thin solid #F8EFC5;
+}
+
+.footer{
+	color: #334d55;
+	font-size: 80%;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer a:link    	 {
+ color: #334d55;
+
+ }
+
+/************** feature styles *****************/
+
+.feature{
+	padding: 5px 20px 30px 20px;
+	font-size: 80%;
+	height: 150px;
+	
+}
+html>body .feature {height: auto;}
+
+.feature h1{
+	font: bold 175% Arial,sans-serif;
+	color: #006666;
+	padding: 20px 0px 0px 0px;
+	}
+	
+
+
+.faculty {
+	font: italic bold 150% Arial, sans-serif;
+	color: #3d8e76;
+	
+	
+}
+/*******************TopNavTags *****************/
+
+
+
+#topnav{
+	color:#006633;
+	font-size: 12px;
+	background-color: #f8efc5;
+	font-weight: bold;
+	}
+
+#topnav a{
+ 	background-color: #f8efc5;
+	text-decoration: underline;
+	}
+	
+
+#tr {
+	position:absolute;
+	top: -1px;
+	right: -1px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#masthead{
+	position: absolute;
+	top: 0px;
+	width:100%;
+	
+}
+
+/***********************************************/
+/* Navigation tags                             */
+/***********************************************/
+
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	width: 8em;
+	list-style: none;
+	color: #f8efc5;
+	font: small Arial,sans-serif;
+	background: #f8efc5;
+	z-index: 1000;
+	}
+	
+	#nav li { /* all list items */
+		/*position : relative;*/
+		float : left;
+		line-height : 1.25em;
+		margin-bottom : -1px;
+		width: 8em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li ul { /* second-level lists */
+		position : absolute;
+		left: -999em;
+		margin-left : 9em;
+		margin-top : -4em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li ul ul { /* third-and-above-level lists */
+		left: -999em;
+		z-index: 1000;
+	}
+	
+	#nav li a {
+	width : 8em;
+	display : block;
+	color : black;
+	font-weight: normal;
+	font-size: 105%;
+	text-decoration : none;
+	background-color : #d6dbb0;
+	padding : 0.3em 0.5em;
+	border-top: thin solid #f8efc5;
+	border-right: thin solid #ffffff;
+	border-bottom: thin solid #ffffff;
+	border-left: thin solid #f8efc5;
+	z-index: 1000;
+	}
+	
+	#nav li a:hover {
+		color : #006633;
+		background-color : #f8efc5;
+		z-index: 1000;
+		
+	}
+	
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+		left: -999em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+		left: auto;
+		z-index: 1000;
+		
+	}
+
+
+
+
+/************* globalNav styles ****************/
+
+#globalNav{
+position: relative;
+top: 90px;
+width: 100%;
+height: 32px;
+color: #666633;
+padding: 0px;
+margin: 0px;
+background-image:  url(../images/glbnav_background.jpg);
+}
+
+#globalNav img{
+	margin-bottom: -4px;
+ 
+}
+
+#gnl {
+	position: absolute;
+	top: -6px;
+	left:-1px;
+}
+
+#gnr {
+	position: absolute;
+	top: 0px;
+	right:0px;
+}
+
+#globalLink{
+	padding: 3px;
+	margin: 0px;
+	z-index: 100;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+
+a.glink, a.glink:visited{
+	font-size: 105%;
+	color: white;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+	border-right: 1px solid #f8efc5;
+	text-decoration: none;
+}
+
+a.glink:hover{
+	background-image:  url(../images/glblnav_selected.jpg);
+	text-decoration: none;
+	color: #F8EFC5;
+}
+
+a.ghomelink, a.ghomelink:visited{
+  	font-size: 105%;
+  	color: white;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+	border-right: 1px solid #f8efc5;
+	text-decoration: none;
+}
+
+a.ghomelink:hover{
+	background-image:  url(../images/glblnav_selected.jpg);
+	text-decoration: none;
+	color: #F8EFC5;
+}
+
+
+.skipLinks {display: none;}
+
+/************ subglobalNav styles **************/
+
+.subglobalNav{
+	position: absolute;
+	top: 125px;
+	width: 100%;
+	height: 20px;
+	padding: 0px 0px 0px 10px;
+	visibility: hidden;
+	color: #F8EFC5;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.subglobalNav a:link, .subglobalNav a:visited {
+	font-size: 90%;
+	color: #006633;
+	text-decoration: none;
+	padding: 0px 15px 0px 15px;
+	
+		
+	
+}
+
+.subglobalNav a:hover{
+	color:#996633;
+}
+
+
+
+
+
+
+
+/********************* end **********************/

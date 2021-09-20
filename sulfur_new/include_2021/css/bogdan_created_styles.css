@@ -1,0 +1,104 @@
+@import "csu_prox_font.css";
+
+/*
+    Author: Bogdan Vasilchenko, student SE, College of Vet Sciences. Manager: Wenjing Jiang
+    Date created: 19 May 2021
+    Description: This stylesheet is for sulfur.html page
+*/
+
+#heading_content{
+    margin-bottom: -5px !important; 
+}
+b {
+
+    font-weight: bold; 
+}
+@media (max-width: 767.98px) {
+    /*By default, containers are only full-width on xs screens.
+    This makes them full-width om sm screens as well*/
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100% !important;
+    }
+}
+
+#heading_content{
+
+    font-family: "prox-regular", Arial, sans-serif;
+}
+
+.heading_text{
+    font-family: "prox-semibold", Arial, sans-serif;
+
+}
+
+.animal_top_table{
+
+    margin-top: 5%;
+}
+
+.big-csu-button-primary{
+    background-color: #1E4D2B;
+    color: #FFFFFF;
+    padding: 1%;
+
+
+}
+
+.big-csu-button-secondary{
+    background-color: #b3b066;
+    color: #ffffff;
+    padding: 1%;
+
+
+}
+.big-csu-button h4{
+    font-family: "prox-semibold", Arial, sans-serif;
+    justify-content: center;
+}
+.btn-csu-primary{
+    background-color: #1E4D2B;
+    color: #FFFFFF;
+    font-family: "prox-regular", Arial, sans-serif;
+
+}
+
+.btn-csu-secondary{
+    background-color: #C8C372;
+    color: #FFFFFF;
+    font-family: "prox-regular", Arial, sans-serif;
+
+
+}
+.sub-buttons-row{
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+/*$csu-green: #1E4D2B;*/
+/*$csu-gold: #C8C372;*/
+/*$csu-white: #FFFFFF;*/
+
+/*// Aggie (CSU - Secondary)*/
+
+/*$black-80: #59595B;*/
+/*$aggie-orange: #D9782D;*/
+
+/*// Tertiary (CSU - Tertiary)*/
+
+/*$alfalfa: #C9D845;*/
+/*$canyon: #CC5430;*/
+/*$dark-slate: #105456;*/
+/*$reservoir: #12A4B6;*/
+/*$sunshine: #ECC530;*/
+
+/*// Color Theme*/
+
+/*$primary: $csu-green;*/
+/*$secondary: $csu-gold;*/
+/*$success: $dark-slate;*/
+/*$info: $reservoir;*/
+/*$warning: $sunshine;*/
+/*$danger: $canyon;*/
+/*$link: $dark-slate;*/
