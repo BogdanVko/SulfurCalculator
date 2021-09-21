@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7110e065-1fd6-463b-9603-50ca0d90e8e4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sg5mYjbytYG3wgRIxXHIziJRhK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\sulfer_test\sulfur_new\include_2021\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cold Fusion.sulfurcalc.cfm">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" custom_browser="" web_path="http://localhost:8500/sulfer_test/webdocs/tools/sulfurcalc.cfm">
+      <method v="2" />
+    </configuration>
+    <configuration name="inclfooter_2020.cfm" type="Cold Fusion runner description" temporary="true" custom_browser="" web_path="http://localhost:8500/sulfer_test/include_2020/inclfooter_2020.cfm">
+      <method v="2" />
+    </configuration>
+    <configuration name="sulfurcalc.cfm" type="Cold Fusion runner description" temporary="true" custom_browser="" web_path="http://localhost:8500/sulfer_test/webdocs/tools/sulfurcalc.cfm">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cold Fusion.sulfurcalc.cfm" />
+        <item itemvalue="Cold Fusion.inclfooter_2020.cfm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7110e065-1fd6-463b-9603-50ca0d90e8e4" name="Default Changelist" comment="" />
+      <created>1621281551423</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621281551423</updated>
+      <workItem from="1621281552457" duration="48000" />
+      <workItem from="1621281635810" duration="12339000" />
+      <workItem from="1621529547606" duration="11513000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="715" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621283451674">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621283451674" />
+    <state x="718" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1621535140514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621535140514" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1621530845030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621530845030" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1621536677829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621536677829" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1621450556334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621450556334" />
+    <state x="728" y="250" key="search.everywhere.popup" timestamp="1621281652963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="250" key="search.everywhere.popup/0.0.1920.1040/-1080.-601.1080.1880@0.0.1920.1040" timestamp="1621281652962" />
+  </component>
+</project>

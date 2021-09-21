@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Bogdan Vasilchenko, student SE, College of Vet Sciences. Manager: Wenjing Jiang
+    Date created: 10 May 2021
+    Description: This is the sulfur calculator HTML page. Live version @ https://dlab.colostate.edu/webdocs/tools/sulfurcalc.cfm (20 May 2021)
+    design TO-DO:
+    footer margin-top wrong perhaps
+    fonts of head and foot - off
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Diagnostic Labaratories, Histology - CVMBS - Colorado State
+        University.
+    </title>
+
+    <!--    Bootstrap Import; btw don't forget to add favicon!-->
+    <link rel="stylesheet" href="./include_2021/css/bootstrap.min.css" />
+    <!--    CSU guidelines styles-->
+    <link rel="stylesheet" href="./include_2021/css/csu_prox_font.css">
+    <link rel="stylesheet" href="./include_2021/css/layout_cvmbs.css" type="text/css"/>
+    <link rel="stylesheet" href="./include_2021/css/screen_cvmbs.css"/>
+
+    <!--    Custom stylesheet for this page-->
+    <link rel="stylesheet" href="./include_2021/css/bogdan_created_styles.css">
+
+
+</head>
+
+<body style="margin: 0px !important; padding: 0px !important; background-color: #cdcdcd;">
+    <!--Header -->
+    <header id="header">
+        <!--margin-top: -15px; width: 130%; margin-left: -15%"-->
+        <div id="csu-branding" style="background-color: #1E4D2B; position:static;">
+            <div class="container" style="padding: 10px !important;">
+
+                <a href="http://csu-cvmbs.colostate.edu/" id="csu-logo">
+                    <img class="d-none d-lg-block" src="./images/signature-oneline.svg"
+                        alt="Colorado State University" />
+                    <img class="d-none d-md-block d-lg-none" src="./images/signature-stacked.svg"
+                        alt="Colorado State University" />
+                    <img class="d-md-none" src="./images/signature-mobile.svg" alt="Colorado State University" />
+                </a>
+                <div id="site-title">SULFUR CONCENTRATION INTAKE</div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Header End -->
+
+    <!--Main content Always show-->
+    <div class="container" id="heading_content" style="min-height:80vh; padding-top: 50px; background-color: white">
+        <div class="row justify-content-center">
+            <div class="col col-md-auto">
+
+                <h4 class="heading_text">CALCULATING TOTAL SULFUR CONCENTRATION INTAKE</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped animal_top_table">
+
+                    <tbody>
+                        <tr>
+
+                            <td>ANIMAL BODY WEIGHT IN POUNDS</td>
+                            <td>
+                                <label for="BodyWeightId" class="sr-only">Body Weight</label>
+                                <input type="number" NAME="BodyWeight" id="BodyWeightPounds">
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>BEEF ANIMAL TYPE</td>
+                            <td>
+                                <label for="NonLactatingId" class="sr-only">Non-Lactating</label>
+                                &nbsp;&nbsp;<input TYPE="RADIO" NAME="AN_TYPE" VALUE="non-lactating" CHECKED
+                                    id="NonLactatingId">NON-LACTATING<br>
+                                <label for="LactatingId" class="sr-only">Lactating</label>
+                                &nbsp;&nbsp;<input TYPE="RADIO" NAME="AN_TYPE" VALUE="lactating"
+                                    id="LactatingId">LACTATING
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td>SULFATE IN WATER, ppm (by laboratory measurement)</td>
+                            <td>
+                                <label for="SulfateWaterId" class="sr-only">SULFATE IN WATER, ppm (by laboratory
+                                    measurement)</label>
+                                <input type="number" name="SulfateWater" value="0" id="SulfateWaterId">
+                            </TD>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <!--This table below needs to be rewritten, this is just copied from cfm file!-->
+
+            <table class="table-striped" WIDTH=97% align="center" style="border: 2px solid #ddd !important;">
+                <thead>
+                    <TR>
+                        <td align="center">FEEDSTUFF NAME</td>
+                        <td align="center">PERCENT SULFUR IN FEED (by laboratory measurement) (if given as sulfate,
+                            divide by 3)
+                        </td>
+                        <td align="center">PERCENT OF TOTAL FEED/FORAGE INTAKE (total of all feeds must = 100 %)</td>
+                    </TR>
+                    <thead>
+                    <tbody>
+                        <tr class="bottom-table-row">
+
+                            <td align="center" style='border:none;'>
+                                <label for="Feed1Id" class="sr-only">Feed 1</label>
+                                <input size="10" type="text" name="Feed1" id="Feed1Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="Sulfate1Id" class="sr-only">Sulfate 1</label>
+                                <input size="10" type="number" name="Sulfate1" value="0" id="Sulfate1Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="DMI1Id" class="sr-only">DMI 1</label>
+                                <input size="10" type="number" name="DMI1" value="100" id="DMI1Id">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style='border:none;'>
+                                <label for="Feed2Id" class="sr-only">Feed 2</label>
+                                <input size="10" type="text" name="Feed2" id="Feed2Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="Sulfate2Id" class="sr-only">Sulfate 2</label>
+                                <input size="10" type="number" name="Sulfate2" value="0" id="Sulfate2Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="DMI2Id" class="sr-only">DMI 2</label>
+                                <input size="10" type="number" name="DMI2" value="0" id="DMI2Id">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style='border:none;'>
+                                <label for="Feed3Id" class="sr-only">Feed 3</label>
+                                <input size="10" type="text" name="Feed3" id="Feed3Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="Sulfate3Id" class="sr-only">Sulfate 3</label>
+                                <input size="10" type="number" name="Sulfate3" value="0" id="Sulfate3Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="DMI3Id" class="sr-only">DMI 3</label>
+                                <input size="10" type="number" name="DMI3" value="0" id="DMI3Id">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style='border:none;'>
+                                <label for="Feed4Id" class="sr-only">Feed 4</label>
+                                <input size="10" type="text" name="Feed4" id="Feed4Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="Sulfate4Id" class="sr-only">Sulfate 4</label>
+                                <input size="10" type="number" name="Sulfate4" value="0" id="Sulfate4Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="DMI4Id" class="sr-only">DMI 4</label>
+                                <input size="10" type="number" name="DMI4" value="0" id="DMI4Id">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" style='border:none;'>
+                                <label for="Feed5Id" class="sr-only">Feed 5</label>
+                                <input size="10" type="text" name="Feed5" id="Feed5Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="Sulfate5Id" class="sr-only">Sulfate 5</label>
+                                <input size="10" type="number" name="Sulfate5" value="0" id="Sulfate5Id">
+                            </td>
+                            <td align="center" style='border:none;'>
+                                <label for="DMI5Id" class="sr-only">DMI 5</label>
+                                <input size="10" type="number" name="DMI5" value="0" id="DMI5Id">
+                            </td>
+                        </tr>
+                    </tbody>
+
+            </table>
+        </div>
+
+        <div class="row justify-content-center sub-buttons-row">
+            <div class="col justify-content-center text-center big-csu-button-primary" id="calcBtn">
+                <h4>Calculate</h4>
+
+            </div>
+            <div class="col justify-content-center text-center big-csu-button-secondary" id="resetBtn">
+                <h4>Reset</h4>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+
+                <p class="lead" id="resultPrint">
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Main content Always show End-->
+
+    <!--Main content toggle-->
+
+
+    <!--Main content toggle End-->
+    <!--- Footer -->
+
+    <footer>
+
+        <div class="footer-lower-wrapper">
+            <div class="footer-lower">
+                <div class="bottom-footer px-md-40">
+                    <div class="container clearfix">
+                        <div class="row">
+
+
+                            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+
+                                <div class="row" style="padding-left:6px">
+                                    <a class="mr-2 ml-2 a-class-footer" target="_blank" title="contact csu"
+                                        href="https://www.colostate.edu/contact/">Contact CSU</a> |
+                                    <a class="mr-2 ml-2 a-class-footer" target="_blank" title="equal opportunity"
+                                        href="https://www.colostate.edu/equal-opportunity">Equal Opportunity</a> |
+                                    <a class="mr-2 ml-2 a-class-footer" target="_blank" title="privacy statement"
+                                        href="https://www.colostate.edu/privacy">Privacy Statement</a> |
+                                    <a class="mr-2 ml-2 a-class-footer" target="_blank" title="disclaimer"
+                                        href="https://www.colostate.edu/disclaimer">Disclaimer</a>
+                                </div>
+
+                                <div class="row" style="padding-left:10px">
+                                    &copy; 2021 &nbsp;<a class="mr-1 ml-1 a-class-footer" target="_blank"
+                                        href="https://vetmedbiosci.colostate.edu/">College of Veterinary
+                                        Medicine &amp; Biomedical Sciences</a> &nbsp;- &nbsp;Sulfur Concentration Intake
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <a href="https://www.colostate.edu/">
+
+                                    <div class="img-fluid xs-footer-logo">
+                                        <img src="./images/csu-oneline-final.svg" class="img-fluid"
+                                            style="padding-top:5px; max-height:50px" alt="Colorado State University">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                                <div class="bottomlogo">
+                                    <a href="https://www.colostate.edu/">
+                                        <span class="sr-only">Colorado State University</span>
+                                        <img src="./images/CSU-footer-logo.svg" class="img-fluid"
+                                            style="padding-top:5px; max-height:70px" alt="Colorado State University">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+    <!--- Footer End -->
+
+    <!--JQUERY AND POPPER EXTERNAL IMPORT (change to local?)-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!--BOOSTRAP JS LOCAL IMPORT-->
+    <script src="include_2021/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./logicExperiment.js"></script>
+
+</body>
+
+</html>

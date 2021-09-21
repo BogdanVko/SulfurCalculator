@@ -1,0 +1,12 @@
+The original production site files should first be
+backed up!
+
+The files sulfurcalc.cfm and sulfurcalc1.cfm 
+reference a new folder named include_2020
+which should be copied into the production site before
+the above files are copied.
+
+Then the sulfurcalc.cfm and sulfurcalc1.cfm files
+should be copied to cvmwebprod03.
+
+

@@ -1,0 +1,8 @@
+@import "screen_08-2.css";
+@import 'print_08.css';
+
+/*	the first rule actual styles are imported from a third stylesheet 
+	this hides them from older browsers which don't support @import with double quotes */
+/*	the second should additionally hide the problematic print style from IE5/Mac */
+
+/* see http://centricle.com/ref/css/filters/ for further details */	

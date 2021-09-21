@@ -1,0 +1,670 @@
+/***********************************************/
+/* emx_nav_left.css                            */
+/* Use with template Halo_leftNav.html         */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+body
+{
+	font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+	color: #333333;
+	line-height: 1.166;	
+	/*margin: 8px;*/
+	/*padding: 5px;*/
+	background: #ffffff;
+}
+
+/***new footer css -enapier 2017***/
+
+.wht {
+	font-size: 9px;
+	color: #ffffff;
+	padding-left: 10px;
+	float: left;
+}
+
+
+	/******* hyperlink and anchor tag styles *******/
+	a: link    	        {
+	color: #006633;
+	text-decoration: underline;
+	
+	}
+
+a:visited 	        {
+	color: #666600;
+	
+}
+
+a:hover{
+	text-decoration: none;
+	
+}
+
+
+
+/************** header tag styles **************/
+
+h1{
+	font-family:VitesseBook;
+	font-size: 200%;
+	color: #1E4D2B;
+	}
+
+h2 {font-family:VitesseBook;
+font-size:100%;
+color:#1E4D2B;
+}
+
+/*** old style -enapier 2017 
+h2     {font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: small; color: #006699; text-align: left}
+***/
+
+
+h3	{font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: medium; text-align: center; background: #f8efc5;
+border-top: thin solid #336600;
+	border-right: thin solid #F8EFC5;
+	border-bottom: thin solid #F8EFC5;
+	border-left: thin solid #F8EFC5;
+	color: #005fa9;
+}
+div {
+	display: block;
+}
+#csu-logo img {
+	height: 50px;
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: .125em solid white;
+}
+
+#csu-branding {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #1E4D2B; 
+	padding: 15px;
+}
+
+#csu-branding .container {
+	display: flex;
+	align-items: center;
+}
+
+#site-title {
+	font-family: 'prox-light', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: .11em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+#pagecell{
+	position: absolute;
+	top: 147px;
+	left: 200px;
+	right: auto;
+	width: 80%;
+	background-color: white;
+	border-top: 1px solid #ccd2d2;
+	border-right: 1px solid #ccd2d2;
+	border-left: 1px solid #ccd2d2;
+	border-bottom: 1px solid #ccd2d2;
+	
+}
+
+
+ /* TopNavTags */ 
+
+.topnav{
+	color:#006633;
+	font-size: 12px;
+	background-color: #f8efc5;
+	font-weight: bold;
+	}
+
+.topnav a{
+ 	background-color: #f8efc5;
+	text-decoration: underline;
+	}
+	
+
+.tr {
+	position:absolute;
+	top: -1px;
+	right: -1px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#masthead{
+	position: absolute;
+	top: -9px;
+	width:100%;
+	left: 2px;
+	
+}
+
+.row.m-4 {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.m-4 {
+	margin: 1.5rem !important;
+}
+
+.mr-2 {
+	margin-right: .5rem !important;
+}
+
+.ml-2 {
+	margin-left: .5rem !important;
+}
+
+#footer-logo {
+	max-height: 100px;
+	float: right;
+}
+
+a.a-class-footer {
+	color: white;
+}
+a.a-class-footer:visited {
+	color: white;
+}
+
+a.a-class-footer:hover {
+	color: white;
+}
+
+a.a-class-footer:hover, a.a-class-footer:visited, a.a-class-footer:link, a.a-class-footer:active {
+	text-decoration: none;
+}
+
+footer.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/***********************************************/
+/* Navigation tags                             */
+/***********************************************/
+
+#nav, #nav ul {
+    padding: 0;
+	margin: 10px;
+	width: 8em;
+	list-style: none;
+	color: #f8efc5;
+	font: small Arial,sans-serif;
+	background: #f8efc5;
+	z-index: 1000;
+	}
+	
+	#nav li { /* all list items */
+		/*position : relative;*/
+		top: 147px;
+		float : left;
+		line-height : 1.25em;
+		margin-bottom : -1px;
+		width: 8em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li ul { /* second-level lists */
+		position : absolute;
+		left: -999em;
+		margin-left : 9em;
+		margin-top : -4em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li ul ul { /* third-and-above-level lists */
+		left: -999em;
+		z-index: 1000;
+	}
+	
+	#nav li a {
+	width : 8em;
+	display : block;
+	color : black;
+	font-weight: normal;
+	font-size: 105%;
+	text-decoration : none;
+	background-color : #d6dbb0;
+	padding : 0.5em 0.5em;
+	border-top: thin solid #f8efc5;
+	border-right: thin solid #ffffff;
+	border-bottom: thin solid #ffffff;
+	border-left: thin solid #f8efc5;
+	z-index: 1000;
+	}
+	
+	#nav li a:hover {
+		color : #006633;
+		background-color : #f8efc5;
+		z-index: 1000;
+		
+	}
+	
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+		left: -999em;
+		z-index: 1000;
+		
+	}
+	
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+		left: auto;
+		z-index: 1000;
+		
+	}
+
+
+
+
+/************* globalNav styles ****************/
+
+#globalNav{
+position: relative;
+top: 118px;
+width: 100%;
+height: 32px;
+color: #666633;
+padding: 0px;
+margin: 0px;
+background-image:  url(../images/glbnav_background.jpg);
+}
+
+
+#globalNav img{
+	margin-bottom: -4px;
+ 
+}
+
+#gnl {
+	position: absolute;
+	top: -6px;
+	left:-1px;
+}
+
+#gnr {
+	position: absolute;
+	top: 0px;
+	right:0px;
+}
+
+#globalLink{
+	padding: 3px;
+	z-index: 100;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	}
+
+
+a.glink, a.glink:visited{
+	font-size: 105%;
+	color: white;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+a.glink:hover{
+	background-image:  url(../images/glblnav_selected.jpg);
+	text-decoration: none;
+	color: #F8EFC5;
+}
+
+a.ghomelink, a.ghomelink:visited{
+  	font-size: 105%;
+  	color: white;
+	font-weight: bold;
+	margin: 0px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+a.ghomelink:hover{
+	background-image:  url(../images/glblnav_selected.jpg);
+	text-decoration: none;
+	color: #F8EFC5;
+}
+
+
+.skipLinks {display: none;}
+
+
+
+
+/************** feature styles *****************/
+
+.feature{
+	padding: 5px 20px 30px 20px;
+	font-size: 80%;
+	height: 150px;
+	
+}
+html>body .feature {height: auto;}
+
+.feature h1{
+	font: bold 175% Arial,sans-serif;
+	color: #006666;
+	padding: 20px 0px 0px 0px;
+	}
+
+.faculty {
+	font: italic bold 150% Arial, sans-serif;
+	color: #3d8e76;
+	}
+
+.content-left {
+	padding: 5px 5px 30px 5px;
+	width: 580px;
+	margin-left: 20px;
+	float: left
+}
+.content-left p {
+	margin-left: 12px;
+}
+.content-right {
+	width: 200px;
+	margin-left: 640px;
+}
+.content-right p {
+	margin-left: 12px;
+}
+
+/************************ staff styles ****************/
+
+.staff {
+	padding: 5px 20px 30px 20px;
+	font-size: 80%;
+	height: 150px;
+	
+}
+
+.staff h1{
+	font: italic bold 150% Arial, sans-serif;
+	color: #3d8e76;
+	text-align: left;
+	}
+
+.staff h2 {
+	font-size: 	120%;
+	color: #3d8e76;
+	text-align: center;
+	}
+	
+	
+.staff h3{
+	font: bold Arial, sans-serif;
+	font-size: 105%;
+	color: #3d8e76;
+	display:block;
+	background-color: #F8EFC5;
+	background-position: center;
+	text-align: center;
+	border-top: thin solid #336600;
+	border-right: thin solid #F8EFC5;
+	border-bottom: thin solid #F8EFC5;
+	border-left: thin solid #F8EFC5;
+}
+
+/*************** story styles ******************/
+
+.story {
+	padding: 5px 5px 30px 20px;
+	font-size: 80%;
+}
+
+.story h3{
+	font: bold Arial, sans-serif;
+	font-size: 105%;
+	color: #005fa9;
+	display:block;
+	background-color: #F8EFC5;
+	background-position: center;
+	text-align: center;
+	border-top: thin solid #336600;
+	border-right: thin solid #F8EFC5;
+	border-bottom: thin solid #F8EFC5;
+	border-left: thin solid #F8EFC5;
+}
+
+
+.story a.capsule{
+	font: bold 1em Arial,sans-serif;
+	color: #005fa9;
+	display:block;
+	padding-bottom: 5px;
+}
+
+	
+.address {font-size:small}
+
+.story a.capsule:hover{
+	text-decoration: none;
+}
+
+/********* form and related tag styles *********/
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+label{
+ font: bold 1em Arial,sans-serif;
+ color: #334d55;
+}
+				
+input{
+font-family: Arial,sans-serif;
+}
+
+/*************** search styles *****************/
+
+#search{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	z-index: 101;
+}
+
+#search input{
+  font-size: 70%;
+  margin: 0px  0px 0px 10px;
+ }
+ 
+#search a:link, #search a:visited {
+	font-size: 80%;
+	font-weight: bold;
+	
+}
+
+#search a:hover{
+	margin: 0px;
+}
+.welcome-listings {
+	width: 750px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-spacing: 0px;
+	border: 0px;
+}
+.listings {
+	background-color: #1E4D2B;
+	padding: 5px;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	max-height: 350px;
+	max-width: 350px;
+}
+.availability-table-row-head {
+	background-color: #1E4D2B;	
+}
+.availability-table-row {
+	width:350px;
+	text-align:center;
+	color: white;
+	font-family: Arial;
+	border: 1px solid black;
+
+}
+.availability-table-row-subhead {
+	font-family: Arial;
+	color: white;
+	border: 1px solid black;
+}
+.availability-table-row-subhead-yellow {
+	font-family: Arial;
+	color: yellow;
+	border: 1px solid black;
+}
+.availability-table-row-subhead-silver {
+	font-family: Arial;
+	background-color: silver;
+	border: 1px solid black;
+}
+.contact-details {
+	text-align:center;
+	font-size:0.85em;
+}
+.border-0{
+	border-top: 0px;
+}
+.properties-tables {
+	width: 750px;
+	padding: 5px;
+	border-spacing: 0px;
+	border: 0px solid black;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.renter-buyer {
+	width: 100%;
+	height: 300px;
+	padding: 7px;
+	border-spacing: 0px;
+	border: 1px solid #660000;
+}
+.renter-buyer-head {
+	background-color: #D9782D;
+	text-align: center;
+	border-width: thin;
+	border-style: outset;
+	border-color: #660000;
+}
+.property-owner {
+	width: 100%;
+	height: 300px;
+	padding: 7px;
+	border-spacing: 0px;
+	border: 1px solid #660000;
+}
+.property-owner-head {
+	background-color: #C8C372;
+	text-align: center;
+	border-width: thin;
+	border-style: outset;
+	border-color: #660000; 
+
+}
+.roommate-login {
+	width: 100%;
+	height: 300px;
+	padding: 7px;
+	border-spacing: 0px;
+	border: 1px solid #660000;
+}
+.roommate-login-head {
+	background-color: #EA5328;
+	text-align: center;
+	border-width: thin;
+	border-style: outset;
+	border-color: #660000;
+}
+.disclaimer {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: red; 
+}
+.listing-search {
+	width: 700px;
+	border-spacing: 0px;
+	border: 0px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.listing-match {
+	border: 0px;
+	border-spacing: 10px;
+	padding: 3px;
+}
+.font-size-16 {
+	font-size: 16px;
+}
+.font-size-13 {
+	font-size: 13px;
+}
+
+.padding-right-5 {
+	padding-right: 5px;
+}
+
+footer {
+	font-family: 'prox-regular';
+	color: white;
+	margin-top: 3px;
+	width: 100%;
+	position: absolute;
+	background: #1E4D2B;
+	left: 0;
+	font-size: 1.1em;
+	padding: 15px 0 15px 0;
+}
+/***Responsiveness media***/
+@media (max-width: 991px) {
+	footer {
+		height: auto;
+	}
+
+	#footer-logo {
+		float: none;
+		max-width: 230px;
+	}
+}
+
+footer {
+	margin-top: 3px;
+	padding: 15px 0 15px 0;
+	background: #1e4d2b;
+	position: absolute;
+	width: 100%;
+}
+
+/********************* end **********************/
