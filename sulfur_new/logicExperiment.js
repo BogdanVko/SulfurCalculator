@@ -184,9 +184,9 @@ $(document).ready(function () {
 
 
         $('#resultPrint').html("" +
-            "<table class=\"table-striped\" width=\"97%\" align=\"center\">" +
+            "<table class=\"table table-striped\">" +
             "<tbody><tr>" +
-            "	<td colspan=\"3\" align=\"center\"><b>SULFUR INTAKE CALCULATIONS FOR BEEF CATTLE</b></td>" +
+            "	<td colspan=\"4\"><b class=\"text-center\">SULFUR INTAKE CALCULATIONS FOR BEEF CATTLE</b></td>" +
             "</tr>" +
 
             "<tr><td colspan=\"4\"><b>Animal Information:</b></td></tr>" +
@@ -199,7 +199,7 @@ $(document).ready(function () {
             "<tr>" +
             "<td>&nbsp;</td>" +
             "</tr>" +
-            "<tr><td><b>Calculated values at various temperatures</b></td></tr>" +
+            "<tr><td colspan=\"4\"><b>CALCULATED VALUES AT VARIOUS TEMPERATURES</b></td></tr>" +
             "<tr>" +
             "<td>&nbsp;</td>" +
             "<td align=\"right\">40 Degrees F</td>" +

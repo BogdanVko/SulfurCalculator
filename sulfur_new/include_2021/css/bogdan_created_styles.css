@@ -1,7 +1,7 @@
 @import "csu_prox_font.css";
 
 /*
-    Author: Bogdan Vasilchenko, student SE, College of Vet Sciences. Manager: Wenjing Jiang
+    Author: Bogdan Vasilchenko, student SE, College of Vet Sciences. Project Manager: Wenjing Jiang
     Date created: 19 May 2021
     Description: This stylesheet is for sulfur.html page
 */
@@ -12,6 +12,11 @@
 b {
 
     font-weight: bold; 
+}
+
+.inputTable{
+    size: 10%;
+    width: auto;
 }
 @media (max-width: 767.98px) {
     /*By default, containers are only full-width on xs screens.
@@ -41,7 +46,7 @@ b {
 .big-csu-button-primary{
     background-color: #1E4D2B;
     color: #FFFFFF;
-    padding: 1%;
+    padding: 2%;
 
 
 }
@@ -49,7 +54,7 @@ b {
 .big-csu-button-secondary{
     background-color: #b3b066;
     color: #ffffff;
-    padding: 1%;
+    padding: 2%;
 
 
 }

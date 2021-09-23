@@ -17,7 +17,7 @@
         University.
     </title>
 
-    <!--    Bootstrap Import; btw don't forget to add favicon!-->
+    <!--    Bootstrap Import; btw don't forget to add a favicon!-->
     <link rel="stylesheet" href="./include_2021/css/bootstrap.min.css" />
     <!--    CSU guidelines styles-->
     <link rel="stylesheet" href="./include_2021/css/csu_prox_font.css">
@@ -69,32 +69,32 @@
                     <tbody>
                         <tr>
 
-                            <td>ANIMAL BODY WEIGHT IN POUNDS</td>
+                            <th>ANIMAL BODY WEIGHT IN POUNDS</th>
                             <td>
                                 <label for="BodyWeightId" class="sr-only">Body Weight</label>
-                                <input type="number" NAME="BodyWeight" id="BodyWeightPounds">
+                                <input type="number" class="form-control" name="BodyWeight" id="BodyWeightPounds">
                             </td>
                         </tr>
                         <tr>
 
-                            <td>BEEF ANIMAL TYPE</td>
+                            <th>BEEF ANIMAL TYPE</th>
                             <td>
                                 <label for="NonLactatingId" class="sr-only">Non-Lactating</label>
-                                &nbsp;&nbsp;<input TYPE="RADIO" NAME="AN_TYPE" VALUE="non-lactating" CHECKED
+                                &nbsp;&nbsp;<input TYPE="RADIO"  name="AN_TYPE" VALUE="non-lactating" CHECKED
                                     id="NonLactatingId">NON-LACTATING<br>
                                 <label for="LactatingId" class="sr-only">Lactating</label>
-                                &nbsp;&nbsp;<input TYPE="RADIO" NAME="AN_TYPE" VALUE="lactating"
+                                &nbsp;&nbsp;<input TYPE="RADIO" name="AN_TYPE" VALUE="lactating"
                                     id="LactatingId">LACTATING
                             </td>
 
                         </tr>
                         <tr>
 
-                            <td>SULFATE IN WATER, ppm (by laboratory measurement)</td>
+                            <th>SULFATE IN WATER, ppm (by laboratory measurement)</th>
                             <td>
                                 <label for="SulfateWaterId" class="sr-only">SULFATE IN WATER, ppm (by laboratory
                                     measurement)</label>
-                                <input type="number" name="SulfateWater" value="0" id="SulfateWaterId">
+                                <input type="number" class="form-control" name="SulfateWater" value="0" id="SulfateWaterId">
                             </TD>
                             </td>
                         </tr>
@@ -108,86 +108,86 @@
         <div class="row">
             <!--This table below needs to be rewritten, this is just copied from cfm file!-->
 
-            <table class="table-striped" WIDTH=97% align="center" style="border: 2px solid #ddd !important;">
+            <table class="table table-striped" style="border: 2px solid #ddd !important;">
                 <thead>
-                    <TR>
-                        <td align="center">FEEDSTUFF NAME</td>
-                        <td align="center">PERCENT SULFUR IN FEED (by laboratory measurement) (if given as sulfate,
+                    <tr>
+                        <th scope="col">FEEDSTUFF NAME</th>
+                        <th scope="col">PERCENT SULFUR IN FEED (by laboratory measurement) (if given as sulfate,
                             divide by 3)
-                        </td>
-                        <td align="center">PERCENT OF TOTAL FEED/FORAGE INTAKE (total of all feeds must = 100 %)</td>
-                    </TR>
+                        </th>
+                        <th scope="col">PERCENT OF TOTAL FEED/FORAGE INTAKE (total of all feeds must = 100 %)</th>
+                    </tr>
                     <thead>
                     <tbody>
                         <tr class="bottom-table-row">
 
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Feed1Id" class="sr-only">Feed 1</label>
-                                <input size="10" type="text" name="Feed1" id="Feed1Id">
+                                <input class="form-control" type="text" name="Feed1" id="Feed1Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Sulfate1Id" class="sr-only">Sulfate 1</label>
-                                <input size="10" type="number" name="Sulfate1" value="0" id="Sulfate1Id">
+                                <input class="form-control" type="number" name="Sulfate1" value="0" id="Sulfate1Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="DMI1Id" class="sr-only">DMI 1</label>
-                                <input size="10" type="number" name="DMI1" value="100" id="DMI1Id">
+                                <input class="form-control" type="number" name="DMI1" value="100" id="DMI1Id">
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Feed2Id" class="sr-only">Feed 2</label>
-                                <input size="10" type="text" name="Feed2" id="Feed2Id">
+                                <input class="form-control" type="text" name="Feed2" id="Feed2Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Sulfate2Id" class="sr-only">Sulfate 2</label>
-                                <input size="10" type="number" name="Sulfate2" value="0" id="Sulfate2Id">
+                                <input class="form-control" type="number" name="Sulfate2" value="0" id="Sulfate2Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="DMI2Id" class="sr-only">DMI 2</label>
-                                <input size="10" type="number" name="DMI2" value="0" id="DMI2Id">
+                                <input class="form-control" type="number" name="DMI2" value="0" id="DMI2Id">
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Feed3Id" class="sr-only">Feed 3</label>
-                                <input size="10" type="text" name="Feed3" id="Feed3Id">
+                                <input class="form-control" type="text" name="Feed3" id="Feed3Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Sulfate3Id" class="sr-only">Sulfate 3</label>
-                                <input size="10" type="number" name="Sulfate3" value="0" id="Sulfate3Id">
+                                <input class="form-control" type="number" name="Sulfate3" value="0" id="Sulfate3Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="DMI3Id" class="sr-only">DMI 3</label>
-                                <input size="10" type="number" name="DMI3" value="0" id="DMI3Id">
+                                <input class="form-control" type="number" name="DMI3" value="0" id="DMI3Id">
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Feed4Id" class="sr-only">Feed 4</label>
-                                <input size="10" type="text" name="Feed4" id="Feed4Id">
+                                <input class="form-control" type="text" name="Feed4" id="Feed4Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Sulfate4Id" class="sr-only">Sulfate 4</label>
-                                <input size="10" type="number" name="Sulfate4" value="0" id="Sulfate4Id">
+                                <input class="form-control" type="number" name="Sulfate4" value="0" id="Sulfate4Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="DMI4Id" class="sr-only">DMI 4</label>
-                                <input size="10" type="number" name="DMI4" value="0" id="DMI4Id">
+                                <input class="form-control" type="number" name="DMI4" value="0" id="DMI4Id">
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Feed5Id" class="sr-only">Feed 5</label>
-                                <input size="10" type="text" name="Feed5" id="Feed5Id">
+                                <input class="form-control" type="text" name="Feed5" id="Feed5Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="Sulfate5Id" class="sr-only">Sulfate 5</label>
-                                <input size="10" type="number" name="Sulfate5" value="0" id="Sulfate5Id">
+                                <input class="form-control" type="number" name="Sulfate5" value="0" id="Sulfate5Id">
                             </td>
-                            <td align="center" style='border:none;'>
+                            <td style='border:none;'>
                                 <label for="DMI5Id" class="sr-only">DMI 5</label>
-                                <input size="10" type="number" name="DMI5" value="0" id="DMI5Id">
+                                <input class="form-control" type="number" name="DMI5" value="0" id="DMI5Id">
                             </td>
                         </tr>
                     </tbody>
@@ -290,7 +290,7 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 
-    <!--BOOSTRAP JS LOCAL IMPORT-->
+    <!--BOOStrAP JS LOCAL IMPORT-->
     <script src="include_2021/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./logicExperiment.js"></script>
 
