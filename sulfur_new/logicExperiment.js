@@ -192,7 +192,7 @@ $(document).ready(function () {
             "<tr><td colspan=\"4\"><b>Animal Information:</b></td></tr>" +
             "<tr><td colspan=\"4\">Your animal is" +
             " " + lactatingString + ".</td></tr>" +
-            "<tr><td colspan=\"4\">Your animal's weight is  " + weightInPounds + " pounds or  " + Math.round(weight) + " kilograms.<br><br></td>" +
+            "<tr><td colspan=\"4\">Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
             "</tr><tr><td colspan=\"4\"><b>Intake Information:</b></td></tr>" +
             "<tr><td colspan=\"4\">Water Sulfate is " + sulfateW + " ppm., water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
             feedDisplayString +
