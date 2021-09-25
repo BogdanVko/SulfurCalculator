@@ -33,6 +33,8 @@ $(document).ready(function () {
 
     $('#calcBtn').css('cursor', 'pointer');
     $('#resetBtn').css('cursor', 'pointer');
+
+
     $("#resetBtn").click(function () {
         $('td').find("input[type=text], textarea").val("");
         $('td').find("input[type=number], textarea").val("0");
@@ -51,7 +53,7 @@ $(document).ready(function () {
         //round percentSulfurX to 2 sig figs
         // location.reload();
     const weightInPounds = document.getElementById("BodyWeightPounds").value;
-    const weight = 0.4535923 * weightInPounds;
+    const weight = (weightInPounds/2.2);
     // alert("weight in kilos is " + weight);
     //works
 
@@ -160,23 +162,23 @@ $(document).ready(function () {
     let feedDisplayString = ""; //JavaScript is stupid.
 
     if (feed1.dmi > 0) {
-        feedDisplayString += "<tr><td colspan=\"4\">" + feed1.name + " is " + (feed1.dmi * 100) + 
+        feedDisplayString += "<tr><td>" + feed1.name + " is " + (feed1.dmi * 100) + 
         " percent of your animal's daily feed intake and the Sulfur content of this " + feed1.name + " is " + feed1.sulfur + " %.</td></tr>";
     }
     if (feed2.dmi > 0) {
-        feedDisplayString += "<tr><td colspan=\"4\">" + feed2.name + " is " + (feed2.dmi * 100) + 
+        feedDisplayString += "<tr><td>" + feed2.name + " is " + (feed2.dmi * 100) + 
         " percent of your animal's daily feed intake and the Sulfur content of this " + feed2.name + " is " + feed2.sulfur + " %.</td></tr>";
     }
     if (feed3.dmi > 0) {
-        feedDisplayString += "<tr><td colspan=\"4\">" + feed3.name + " is " + (feed3.dmi * 100) + 
+        feedDisplayString += "<tr><td>" + feed3.name + " is " + (feed3.dmi * 100) + 
         " percent of your animal's daily feed intake and the Sulfur content of this " + feed3.name + " is " + feed3.sulfur + " %.</td></tr>";
     }
     if (feed4.dmi > 0) {
-        feedDisplayString += "<tr><td colspan=\"4\">" + feed4.name + " is " + (feed4.dmi * 100) + 
+        feedDisplayString += "<tr><td>" + feed4.name + " is " + (feed4.dmi * 100) + 
         " percent of your animal's daily feed intake and the Sulfur content of this " + feed4.name + " is " + feed4.sulfur + " %.</td></tr>";
     }
     if (feed5.dmi > 0) {
-        feedDisplayString += "<tr><td colspan=\"4\">" + feed5.name + " is " + (feed5.dmi * 100) + 
+        feedDisplayString += "<tr><td>" + feed5.name + " is " + (feed5.dmi * 100) + 
         " percent of your animal's daily feed intake and the Sulfur content of this " + feed5.name + " is " + feed5.sulfur + " %.</td></tr>";
     }
 
@@ -186,51 +188,53 @@ $(document).ready(function () {
         $('#resultPrint').html("" +
             "<table class=\"table table-striped\">" +
             "<tbody><tr>" +
-            "	<td colspan=\"4\"><b class=\"text-center\">SULFUR INTAKE CALCULATIONS FOR BEEF CATTLE</b></td>" +
+            "	<td  class=\"text-center\"><b>SULFUR INTAKE CALCULATIONS FOR BEEF CATTLE</b></td>" +
             "</tr>" +
 
-            "<tr><td colspan=\"4\"><b>Animal Information:</b></td></tr>" +
-            "<tr><td colspan=\"4\">Your animal is" +
+            "<tr><td><b>Animal Information:</b></td></tr>" +
+            "<tr><td>Your animal is" +
             " " + lactatingString + ".</td></tr>" +
-            "<tr><td colspan=\"4\">Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
-            "</tr><tr><td colspan=\"4\"><b>Intake Information:</b></td></tr>" +
-            "<tr><td colspan=\"4\">Water Sulfate is " + sulfateW + " ppm., water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
+            "<tr><td>Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
+            "</tr><tr><td><b>Intake Information:</b></td></tr>" +
+            "<tr><td>Water Sulfate is " + sulfateW + " ppm., water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
             feedDisplayString +
             "<tr>" +
             "<td>&nbsp;</td>" +
             "</tr>" +
-            "<tr><td colspan=\"4\"><b>CALCULATED VALUES AT VARIOUS TEMPERATURES</b></td></tr>" +
+            "<tr><td><b>CALCULATED VALUES AT VARIOUS TEMPERATURES</b></td></tr>" +
+            "</tbody></table><table class=\"table table-striped\"><tbody>" +
             "<tr>" +
             "<td>&nbsp;</td>" +
-            "<td align=\"right\">40 Degrees F</td>" +
-            "<td align=\"right\">70 Degrees F</td>" +
-            "<td align=\"right\">90 Degrees F</td>" +
+            "<td class=\"text-right\">40 Degrees F</td>" +
+            "<td class=\"text-right\">70 Degrees F</td>" +
+            "<td class=\"text-right\">90 Degrees F</td>" +
             "</tr>" +
             "<tr>" +
-            "<td>ESTIMATED H<sub>2</sub>O INTAKE IN LITERS</td><td align=\"right\">" + water40.toFixed(2) + 
-            "</td><td align=\"right\">" + water70.toFixed(2) + "</td><td align=\"right\">" + water90.toFixed(2) + "</td>" +
+            "<td>ESTIMATED H<sub>2</sub>O INTAKE IN LITERS</td><td class=\"text-right\">" + Math.round(water40) + 
+            "</td><td class=\"text-right\">" +  Math.round(water70) + "</td><td class=\"text-right\">" +  Math.round(water90) + "</td>" +
             "</tr>" +
             "<tr><td>GRAMS OF SULFUR CONSUMED IN WATER </td>" +
-            "<td align=\"right\">" + Math.round(sulfurWater40) + "</td><td align=\"right\">" + Math.round(sulfurWater70) + 
-            "</td><td align=\"right\">" + Math.round(sulfurWater90) + "</td>" +
+            "<td class=\"text-right\">" + Math.round(sulfurWater40) + "</td><td class=\"text-right\">" + Math.round(sulfurWater70) + 
+            "</td><td class=\"text-right\">" + Math.round(sulfurWater90) + "</td>" +
             "</tr>" +
             "<tr><td>PERCENT SULFUR IN WATER (as if Dry Matter Intake) </td>" +
-            "<td align=\"right\">" + sulfurDmi40.toFixed(2) + "</td><td align=\"right\">" + sulfurDmi70.toFixed(2) + 
-            "</td><td align=\"right\">" + sulfurDmi90.toFixed(2) + "</td>" +
+            "<td class=\"text-right\">" + sulfurDmi40.toFixed(2) + "</td><td class=\"text-right\">" + sulfurDmi70.toFixed(2) + 
+            "</td><td class=\"text-right\">" + sulfurDmi90.toFixed(2) + "</td>" +
             "</tr>" +
             "<tr><td>PERCENT SULFUR IN ALL FEED (Dry Matter Intake)</td>" +
-            "<td align=\"right\">" + percentSulfurInAllFeed.toFixed(2) + "</td><td align=\"right\">" + percentSulfurInAllFeed.toFixed(2) + 
-            "</td><td align=\"right\">" + percentSulfurInAllFeed.toFixed(2) + "</td>" +
+            "<td class=\"text-right\">" + percentSulfurInAllFeed.toFixed(2) + "</td><td class=\"text-right\">" + percentSulfurInAllFeed.toFixed(2) + 
+            "</td><td class=\"text-right\">" + percentSulfurInAllFeed.toFixed(2) + "</td>" +
             "</tr>" +
             "<tr><td>ESTIMATED TOTAL SULFUR CONCENTRATION (%)</td>" +
-            "<td align=\"right\">" + percentSulfur40.toFixed(2) + "</td><td align=\"right\">" + percentSulfur70.toFixed(2) + "</td><td align=\"right\">" + 
+            "<td class=\"text-right\">" + percentSulfur40.toFixed(2) + "</td><td class=\"text-right\">" + percentSulfur70.toFixed(2) + "</td><td class=\"text-right\">" + 
             percentSulfur90.toFixed(2) + "</td>" +
             "</tr>" +
             "</tbody></table>"
 
             + "");
 
-
+            // $('#result').append("NEW<br/>" + ""
+            // );
         // $(this).prop('disabled', true); //doesn't work
 }
     });
