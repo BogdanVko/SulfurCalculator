@@ -39,7 +39,8 @@ b {
 }
 
 .animal_top_table{
-
+    border-collapse: separate;
+    border-spacing:  0px;
     margin-top: 5%;
 }
 
@@ -50,13 +51,23 @@ b {
 
 
 }
+.big-csu-button-primary:hover{
+    background-color: #12381d;
+    color: #FFFFFF;
+    padding: 2%;
 
+
+}
 .big-csu-button-secondary{
     background-color: #b3b066;
     color: #ffffff;
     padding: 2%;
 
 
+}
+
+.big-csu-button-secondary:hover{
+    background-color: #727138;
 }
 .big-csu-button h4{
     font-family: "prox-semibold", Arial, sans-serif;
