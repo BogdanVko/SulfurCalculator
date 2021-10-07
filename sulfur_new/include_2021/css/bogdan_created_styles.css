@@ -58,6 +58,12 @@ b {
 
 
 }
+#alt_result p{
+    font-size: 1.03rem !important;
+}
+#alt_result .row{
+padding-top: 10px;
+}
 .big-csu-button-secondary{
     background-color: #b3b066;
     color: #ffffff;
