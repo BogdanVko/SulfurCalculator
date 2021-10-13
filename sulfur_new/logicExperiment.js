@@ -163,23 +163,23 @@ $(document).ready(function () {
 
     if (feed1.dmi > 0) {
         feedDisplayString += "<tr><td>" + feed1.name + " is " + (feed1.dmi * 100) + 
-        " percent of your animal's daily feed intake and the Sulfur content of this " + feed1.name + " is " + feed1.sulfur + " %.</td></tr>";
+        " percent of your animal's daily feed intake and the Sulfur content of this " + feed1.name + " is " + feed1.sulfur + "%.</td></tr>";
     }
     if (feed2.dmi > 0) {
         feedDisplayString += "<tr><td>" + feed2.name + " is " + (feed2.dmi * 100) + 
-        " percent of your animal's daily feed intake and the Sulfur content of this " + feed2.name + " is " + feed2.sulfur + " %.</td></tr>";
+        " percent of your animal's daily feed intake and the Sulfur content of this " + feed2.name + " is " + feed2.sulfur + "%.</td></tr>";
     }
     if (feed3.dmi > 0) {
         feedDisplayString += "<tr><td>" + feed3.name + " is " + (feed3.dmi * 100) + 
-        " percent of your animal's daily feed intake and the Sulfur content of this " + feed3.name + " is " + feed3.sulfur + " %.</td></tr>";
+        " percent of your animal's daily feed intake and the Sulfur content of this " + feed3.name + " is " + feed3.sulfur + "%.</td></tr>";
     }
     if (feed4.dmi > 0) {
         feedDisplayString += "<tr><td>" + feed4.name + " is " + (feed4.dmi * 100) + 
-        " percent of your animal's daily feed intake and the Sulfur content of this " + feed4.name + " is " + feed4.sulfur + " %.</td></tr>";
+        " percent of your animal's daily feed intake and the Sulfur content of this " + feed4.name + " is " + feed4.sulfur + "%.</td></tr>";
     }
     if (feed5.dmi > 0) {
         feedDisplayString += "<tr><td>" + feed5.name + " is " + (feed5.dmi * 100) + 
-        " percent of your animal's daily feed intake and the Sulfur content of this " + feed5.name + " is " + feed5.sulfur + " %.</td></tr>";
+        " percent of your animal's daily feed intake and the Sulfur content of this " + feed5.name + " is " + feed5.sulfur + "%.</td></tr>";
     }
 
 
@@ -196,7 +196,7 @@ $(document).ready(function () {
             " " + lactatingString + ".</td></tr>" +
             "<tr><td>Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
             "</tr><tr><td><b>Intake Information:</b></td></tr>" +
-            "<tr><td>Water Sulfate is " + sulfateW + " ppm., water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
+            "<tr><td>Water Sulfate is " + sulfateW + " ppm, water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
             feedDisplayString +
             "<tr>" +
             "<td>&nbsp;</td>" +

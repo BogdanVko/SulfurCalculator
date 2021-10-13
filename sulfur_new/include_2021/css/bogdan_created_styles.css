@@ -46,6 +46,8 @@ b {
 
 .big-csu-button-primary{
     background-color: #1E4D2B;
+    border-radius: 8px;
+    margin: 10px;
     color: #FFFFFF;
     padding: 2%;
 
@@ -53,13 +55,11 @@ b {
 }
 .big-csu-button-primary:hover{
     background-color: #12381d;
-    color: #FFFFFF;
-    padding: 2%;
-
-
 }
 .big-csu-button-secondary{
-    background-color: #b3b066;
+    background-color: #1E4D2B;;
+    border-radius: 8px;
+    margin: 10px;
     color: #ffffff;
     padding: 2%;
 
@@ -67,7 +67,7 @@ b {
 }
 
 .big-csu-button-secondary:hover{
-    background-color: #727138;
+    background-color: #12381d;
 }
 .big-csu-button h4{
     font-family: "prox-semibold", Arial, sans-serif;
