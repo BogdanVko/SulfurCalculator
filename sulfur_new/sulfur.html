@@ -4,8 +4,15 @@
     Author: Bogdan Vasilchenko, student SE, College of Vet Sciences. Manager: Wenjing Jiang
     Date created: 10 May 2021
     Description: This is the sulfur calculator HTML page. Live version @ https://dlab.colostate.edu/webdocs/tools/sulfurcalc.cfm (20 May 2021)
-    Version 2.0: GUI fix, kg -> lb "fix". GUI fix.
-    Version 1.0: Initial code dump
+
+
+    13/Oct/2021
+    Fix ppm. no period, fixed
+    remove whiteplace between % and number fixed
+    Space between lactating and non-lactating fixed
+    Make buttons better fixed
+    Put version number in Footer fixed
+
 -->
 
 <head>
@@ -79,8 +86,10 @@
                             <th>BEEF ANIMAL TYPE</th>
                             <td>
                                 <label for="NonLactatingId" class="sr-only">Non-Lactating</label>
-                                &nbsp;&nbsp;<input TYPE="RADIO" name="AN_TYPE" VALUE="non-lactating" CHECKED
-                                    id="NonLactatingId">NON-LACTATING<br>
+
+                                &nbsp;&nbsp;<input TYPE="RADIO"  name="AN_TYPE" VALUE="non-lactating" CHECKED
+                                    id="NonLactatingId">NON-LACTATING<br/>&nbsp;<br/>
+
                                 <label for="LactatingId" class="sr-only">Lactating</label>
                                 &nbsp;&nbsp;<input TYPE="RADIO" name="AN_TYPE" VALUE="lactating"
                                     id="LactatingId">LACTATING
@@ -249,7 +258,7 @@
                                 <div class="row" style="padding-left:10px">
                                     &copy; 2021 &nbsp;<a class="mr-1 ml-1 a-class-footer" target="_blank"
                                         href="https://vetmedbiosci.colostate.edu/">College of Veterinary
-                                        Medicine &amp; Biomedical Sciences</a> &nbsp;- &nbsp;Sulfur Concentration Intake
+                                        Medicine &amp; Biomedical Sciences</a> &nbsp;- &nbsp;Sulfur Concentration Intake<br/>Version 1.0.0
                                 </div>
 
                             </div>
