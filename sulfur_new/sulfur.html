@@ -5,12 +5,14 @@
     Date created: 10 May 2021
     Description: This is the sulfur calculator HTML page. Live version @ https://dlab.colostate.edu/webdocs/tools/sulfurcalc.cfm (20 May 2021)
 
+
     13/Oct/2021
     Fix ppm. no period, fixed
     remove whiteplace between % and number fixed
     Space between lactating and non-lactating fixed
-    Make buttons better 
+    Make buttons better fixed
     Put version number in Footer fixed
+
 -->
 
 <head>
@@ -25,8 +27,8 @@
     <link rel="stylesheet" href="./include_2021/css/bootstrap.min.css" />
     <!--    CSU guidelines styles-->
     <link rel="stylesheet" href="./include_2021/css/csu_prox_font.css">
-    <link rel="stylesheet" href="./include_2021/css/layout_cvmbs.css" type="text/css"/>
-    <link rel="stylesheet" href="./include_2021/css/screen_cvmbs.css"/>
+    <link rel="stylesheet" href="./include_2021/css/layout_cvmbs.css" type="text/css" />
+    <link rel="stylesheet" href="./include_2021/css/screen_cvmbs.css" />
 
     <!--    Custom stylesheet for this page-->
     <link rel="stylesheet" href="./include_2021/css/bogdan_created_styles.css">
@@ -58,7 +60,7 @@
     <!-- Header End -->
 
     <!--Main content Always show-->
-    <div class="container" id="heading_content" style="min-height:80vh; padding-top: 20px; background-color: white">
+    <div class="container" id="heading_content" style="min-height:90vh; padding-top: 20px; background-color: white">
         <div class="row justify-content-center">
             <div class="col col-md-auto">
 
@@ -84,8 +86,10 @@
                             <th>BEEF ANIMAL TYPE</th>
                             <td>
                                 <label for="NonLactatingId" class="sr-only">Non-Lactating</label>
+
                                 &nbsp;&nbsp;<input TYPE="RADIO"  name="AN_TYPE" VALUE="non-lactating" CHECKED
                                     id="NonLactatingId">NON-LACTATING<br/>&nbsp;<br/>
+
                                 <label for="LactatingId" class="sr-only">Lactating</label>
                                 &nbsp;&nbsp;<input TYPE="RADIO" name="AN_TYPE" VALUE="lactating"
                                     id="LactatingId">LACTATING
@@ -98,7 +102,8 @@
                             <td>
                                 <label for="SulfateWaterId" class="sr-only">SULFATE IN WATER, ppm (by laboratory
                                     measurement)</label>
-                                <input type="number" class="form-control" name="SulfateWater" value="0" id="SulfateWaterId">
+                                <input type="number" class="form-control" name="SulfateWater" value="0"
+                                    id="SulfateWaterId">
                             </TD>
                             </td>
                         </tr>
@@ -110,7 +115,7 @@
         </div>
 
         <div class="row">
-           
+
 
             <table class="table table-striped" style="border-collapse: separate; border-spacing:  0px;">
                 <thead>
@@ -213,6 +218,9 @@
             <div class="col" id="resultPrint">
 
             </div>
+        </div>
+        <div id="alt_result">
+
         </div>
 
     </div>

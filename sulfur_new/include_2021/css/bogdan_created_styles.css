@@ -56,6 +56,12 @@ b {
 .big-csu-button-primary:hover{
     background-color: #12381d;
 }
+#alt_result p{
+    font-size: 1.03rem !important;
+}
+#alt_result .row{
+padding-top: 10px;
+}
 .big-csu-button-secondary{
     background-color: #1E4D2B;;
     border-radius: 8px;
