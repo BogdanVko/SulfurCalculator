@@ -195,7 +195,9 @@ $(document).ready(function () {
 
                 "<tr><td><b>Animal Information:</b></td></tr>" +
                 "<tr><td>Your animal is" +
-                " " + lactatingString + ".</td></tr>" +
+                " " + 
+                                   
+                                   String + ".</td></tr>" +
                 "<tr><td>Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
                 "</tr><tr><td><b>Intake Information:</b></td></tr>" +
                 "<tr><td>Water Sulfate is " + sulfateW + " ppm, water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
