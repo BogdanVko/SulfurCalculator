@@ -1,11 +1,11 @@
- let water40 = 0,
+We let          water40 = 0,
                 sulfurWater40 = 0,
                 water70 = 0,
                 sulfurWater70 = 0,
                 water90 = 0,
                 sulfurWater90 = 0;
 
-            if (!lactating) {
+         We say if animal is NOT lactating, then:
                 water40 = weight * 0.08;
                 sulfurWater40 = water40 * waterSulfur;
 
@@ -24,7 +24,9 @@
                 water90 = weight * 0.15;
                 sulfurWater90 = water90 * waterSulfur;
             }
-            let sulfurDmi40 = 0,
+            then
+         
+         We let sulfurDmi40 = 0,
                 sulfurDmi70 = 0,
                 sulfurDmi90 = 0;
 
@@ -32,7 +34,7 @@
             sulfurDmi70 = (sulfurWater70 / (weight * 0.025) / 10);
             sulfurDmi90 = (sulfurWater90 / (weight * 0.025) / 10);
 
-            let percentSulfurInAllFeed = 0; //gotta work on this.
+         We let percentSulfurInAllFeed = 0; //gotta work on this.
             const percentSulfurFeed1 = feed1.dmi * feed1.sulfur;
             const percentSulfurFeed2 = feed2.dmi * feed2.sulfur;
             const percentSulfurFeed3 = feed3.dmi * feed3.sulfur;
