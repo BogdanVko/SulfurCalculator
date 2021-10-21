@@ -1,0 +1,53 @@
+ let water40 = 0,
+                sulfurWater40 = 0,
+                water70 = 0,
+                sulfurWater70 = 0,
+                water90 = 0,
+                sulfurWater90 = 0;
+
+            if (!lactating) {
+                water40 = weight * 0.08;
+                sulfurWater40 = water40 * waterSulfur;
+
+                water70 = weight * .10;
+                sulfurWater70 = water70 * waterSulfur;
+
+                water90 = weight * 0.18;
+                sulfurWater90 = water90 * waterSulfur;
+            } else {
+                water40 = weight * 0.10;
+                sulfurWater40 = water40 * waterSulfur;
+
+                water70 = weight * .15;
+                sulfurWater70 = water70 * waterSulfur;
+
+                water90 = weight * 0.15;
+                sulfurWater90 = water90 * waterSulfur;
+            }
+            let sulfurDmi40 = 0,
+                sulfurDmi70 = 0,
+                sulfurDmi90 = 0;
+
+            sulfurDmi40 = (sulfurWater40 / (weight * 0.025) / 10); // Questionable formula   
+            sulfurDmi70 = (sulfurWater70 / (weight * 0.025) / 10);
+            sulfurDmi90 = (sulfurWater90 / (weight * 0.025) / 10);
+
+            let percentSulfurInAllFeed = 0; //gotta work on this.
+            const percentSulfurFeed1 = feed1.dmi * feed1.sulfur;
+            const percentSulfurFeed2 = feed2.dmi * feed2.sulfur;
+            const percentSulfurFeed3 = feed3.dmi * feed3.sulfur;
+            const percentSulfurFeed4 = feed4.dmi * feed4.sulfur;
+            const percentSulfurFeed5 = feed5.dmi * feed5.sulfur;
+
+            // This variable is PERCENT SULFUR IN ALL FEED (Dry Matter Intake)
+            percentSulfurInAllFeed = percentSulfurFeed1 + percentSulfurFeed2 + percentSulfurFeed3 + percentSulfurFeed4 + percentSulfurFeed5;
+
+            // These are ESTIMATED TOTAL SULFUR CONCENTRATION (%)
+            let percentSulfur40 = 0,
+                percentSulfur70 = 0,
+                percentSulfur90 = 0;
+
+            percentSulfur40 = percentSulfurInAllFeed + sulfurDmi40;
+            percentSulfur70 = percentSulfurInAllFeed + sulfurDmi70;
+            percentSulfur90 = percentSulfurInAllFeed + sulfurDmi90;
+        

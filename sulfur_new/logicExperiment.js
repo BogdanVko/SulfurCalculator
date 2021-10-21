@@ -61,6 +61,7 @@ $(document).ready(function () {
 
         let lactating = false;
         if (document.getElementById("LactatingId").checked) {
+            console.log("animal is lactating")
             lactating = true;
         }
 
@@ -161,6 +162,7 @@ $(document).ready(function () {
             percentSulfur90 = percentSulfurInAllFeed + sulfurDmi90;
 
             const lactatingString = lactating ? "lactating" : "not lactating";
+            console.log("lactating string is " + lactatingString )
             let feedDisplayString = ""; //JavaScript is stupid.
 
             if (feed1.dmi > 0) {
@@ -197,7 +199,7 @@ $(document).ready(function () {
                 "<tr><td>Your animal is" +
                 " " + 
                                    
-                                   String + ".</td></tr>" +
+                                   lactatingString + ".</td></tr>" +
                 "<tr><td>Your animal's weight is  " + weightInPounds + " pounds or  " + weight.toFixed(2) + " kilograms.<br><br></td>" +
                 "</tr><tr><td><b>Intake Information:</b></td></tr>" +
                 "<tr><td>Water Sulfate is " + sulfateW + " ppm, water Sulfur is  " + waterSulfur.toFixed(2) + " g/l.</td></tr>" +
