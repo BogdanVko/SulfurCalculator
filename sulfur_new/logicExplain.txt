@@ -6,7 +6,7 @@ We let          water40 = 0,
                 sulfurWater90 = 0;
 
          We say if animal is NOT lactating, then:
-                water40 = weight * 0.08;
+                water40 = weight (in pounds!) * 0.08;
                 sulfurWater40 = water40 * waterSulfur;
 
                 water70 = weight * .10;
@@ -14,7 +14,7 @@ We let          water40 = 0,
 
                 water90 = weight * 0.18;
                 sulfurWater90 = water90 * waterSulfur;
-            } else {
+         else  (if animal is lactating):
                 water40 = weight * 0.10;
                 sulfurWater40 = water40 * waterSulfur;
 
@@ -24,7 +24,7 @@ We let          water40 = 0,
                 water90 = weight * 0.15;
                 sulfurWater90 = water90 * waterSulfur;
             }
-            then
+            Ok so we are done with those defentitions... then 
          
          We let sulfurDmi40 = 0,
                 sulfurDmi70 = 0,
